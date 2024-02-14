@@ -1,161 +1,154 @@
 from abc import ABC, abstractmethod
+from collections import deque
 
-class Storage(ABC):
+class Expression(ABC):
+    @staticmethod
+    @abstractmethod
+    def is_valid_char(c):
+        pass
+
+    @abstractmethod
+    def consume(self, c):
+        pass
+
+class Number(Expression):
+    def __init__(self, value=None):
+        self._buf = ""
+        self.value = value
+
+    @staticmethod
+    def is_valid_char(c):
+        return c.isdecimal()
+
+    def consume(self, c):
+        if not self.is_valid_char(c):
+            raise ValueError
+        self._buf += c
+        self.value = int(self._buf)
+
+    def __repr__(self):
+        return "<Number {}>".format(self.value)
+
+class Operator(Expression):
     def __init__(self):
-        self._data = [None] * 100
-        self._top = -1
+        self.op = None
 
-    def push(self, item):
-        self._top += 1
-        self._data[self._top] = item
+    @staticmethod
+    def is_valid_char(c):
+        return c in "()+-*/"
 
-    def peek(self):
-        return self._data[self._top]
+    def consume(self, c):
+        if not self.is_valid_char(c):
+            raise ValueError
+        assert self.op is None
+        self.op = c
 
-    def pop(self):
-        v = self._data[self._top]
-        self._top -= 1
-        return v
-
-    def __len__(self):
-        return self._top + 1
-
-class NumStorage(Storage):
-    pass
-
-class SymbolStorage(Storage):
-    def math(self, left, right):
-        c = self.pop()
-        if c == '+':
-            return left + right
-        elif c == '-':
-            return left - right
-        elif c == '*':
-            return left * right
-        elif c == '/':
-            return left / right
-
-    def priority(self):
-        return SymbolStorage.priority(self.peek())
-
-    @classmethod
-    def priority(ch):
-        if ch == '(':
+    def precedence(self):
+        if self.op == "(":
             return 1
-        elif ch == '+' or ch == '-':
+        elif self.op in "+-":
             return 2
-        elif ch == '*' or ch == '/':
+        elif self.op in "*/":
             return 3
-        elif ch == ')':
+        elif self.op == ")":
             return 4
+        else:
+            raise ValueError("Invalid Operator: " + self.op)
 
-def judge_symbol_priority(ch):
-    if ch == '(':
-        return 1
-    elif ch == '+' or ch == '-':
-        return 2
-    elif ch == '*' or ch == '/':
-        return 3
-    elif ch == ')':
-        return 4
+    def apply(self, v1, v2):
+        if self.op == "+":
+            return Number(v1.value + v2.value)
+        elif self.op == "-":
+            return Number(v1.value - v2.value)
+        elif self.op == "*":
+            return Number(v1.value * v2.value)
+        elif self.op == "/":
+            return Number(v1.value / v2.value)
 
-def math(v1, v2, c):
-    if c == '+':
-        return v1 + v2
-    elif c == '-':
-        return v1 - v2
-    elif c == '*':
-        return v1 * v2
-    elif c == '/':
-        return v1 / v2
+    def __repr__(self):
+        return "<Operator '{}'>".format(self.op)
+
+
+class Calculator:
+    def tokenize_str(s):
+        tokens = deque()
+        token_in_progress = None
+        i = 0
+        while i < len(s):
+            c = s[i]
+
+            # if starting new token, find type
+            if not token_in_progress:
+                if Number.is_valid_char(c):
+                    token_in_progress = Number()
+                elif Operator.is_valid_char(c):
+                    token_in_progress = Operator()
+                elif c == " ":
+                    # dont care about spaces
+                    i += 1
+                else:
+                    raise ValueError("Invalid input char: " + c)
+
+            # try consuming a character
+            try:
+                token_in_progress.consume(c)
+                i += 1
+            except ValueError:
+                # if invalid for that token, move onto another
+                tokens.append(token_in_progress)
+                token_in_progress = None
+
+        tokens.append(token_in_progress)
+        return tokens
+
+    def parse_tokens(tokens):
+        output_stack = deque()
+        operator_stack = deque()
+
+        while len(tokens):
+            tok = tokens.popleft()
+            if isinstance(tok, Number):
+                output_stack.append(tok)
+            elif isinstance(tok, Operator):
+                if tok.op == "(":
+                    output_stack.append(tok)
+                elif tok.op == ")":
+                    while len(operator_stack) and operator_stack[-1].op != "(":
+                        op = operator_stack.pop()
+                        v2 = output_stack.pop()
+                        v1 = output_stack.pop()
+                        output_stack.append(op.apply(v1, v2))
+                    operator_stack.pop()
+                else:
+                    while len(operator_stack) and operator_stack[-1].precedence() > tok.precedence():
+                        op = operator_stack.pop()
+                        v2 = output_stack.pop()
+                        v1 = output_stack.pop()
+                        output_stack.append(op.apply(v1, v2))
+                    operator_stack.append(tok)
+        while len(operator_stack):
+            if operator_stack[-1].op == "(":
+                raise RuntimeError("Mismatched Parentheses")
+            op = operator_stack.pop()
+            v2 = output_stack.pop()
+            v1 = output_stack.pop()
+            output_stack.append(op.apply(v1, v2))
+        return output_stack
+
+
+    def evaluate_str(s):
+        print(f"input str: '{s}'")
+        tokens = Calculator.tokenize_str(s)
+        print(f"token queue: '{tokens}'")
+        output = Calculator.parse_tokens(tokens)
+        print(f"output stack: '{output}'")
+        return output[0].value
+
 
 def main():
-    number_stack = NumStorage()
-    operator_stack = SymbolStorage()
-    user_input = input("Enter the expression (no blank, no decimals): ")
-
-    v = [""] * 100
-    t = 0
-    for i in range(len(user_input)):
-        if i == 0 and user_input[i] == '-':
-            v[t] = user_input[i]
-            t += 1
-        elif user_input[i] == '(' and i + 1 < len(user_input) and user_input[i + 1] == '-':
-            i += 1
-            buf = ""
-            v[t] = user_input[i]
-            t += 1
-            while i < len(user_input) and user_input[i].isdecimal():
-                v[t] = user_input[i]
-                t += 1
-                i += 1
-            number_stack.push(int(''.join(v)))
-            while t > 0:
-                v[t] = ''
-                t -= 1
-            if i < len(user_input) and user_input[i] != ')':
-                i -= 1
-                operator_stack.push('(')
-        elif i < len(user_input) and user_input[i].isdecimal():
-            while i < len(user_input) and user_input[i].isdecimal():
-                v[t] = user_input[i]
-                t += 1
-                i += 1
-            number_stack.push(int(''.join(v)))
-            while t > 0:
-                v[t] = ''
-                t -= 1
-            i -= 1
-        else:
-            if len(operator_stack) == 0:
-                operator_stack.push(user_input[i])
-            elif judge_symbol_priority(user_input[i]) == 1:
-                operator_stack.push(user_input[i])
-            elif judge_symbol_priority(user_input[i]) == 2:
-                if judge_symbol_priority(operator_stack.peek()) == 1:
-                    operator_stack.push(user_input[i])
-                elif judge_symbol_priority(operator_stack.peek()) == 2:
-                    while operator_stack._top >= 0 and number_stack._top >= 1:
-                        v2 = number_stack.pop()
-                        v1 = number_stack.pop()
-                        sum_val = math(v1, v2, operator_stack.pop())
-                        number_stack.push(sum_val)
-                    operator_stack.push(user_input[i])
-                elif judge_symbol_priority(operator_stack.peek()) == 3:
-                    while operator_stack._top >= 0 and number_stack._top >= 1:
-                        v2 = number_stack.pop()
-                        v1 = number_stack.pop()
-                        sum_val = math(v1, v2, operator_stack.pop())
-                        number_stack.push(sum_val)
-                    operator_stack.push(user_input[i])
-
-            elif judge_symbol_priority(user_input[i]) == 3:
-                if judge_symbol_priority(operator_stack.peek()) == 1:
-                    operator_stack.push(user_input[i])
-                elif judge_symbol_priority(operator_stack.peek()) == 2:
-                    operator_stack.push(user_input[i])
-                elif judge_symbol_priority(operator_stack.peek()) == 3:
-                    while operator_stack._top >= 0 and number_stack._top >= 1:
-                        v2 = number_stack.pop()
-                        v1 = number_stack.pop()
-                        sum_val = math(v1, v2, operator_stack.pop())
-                        number_stack.push(sum_val)
-                    operator_stack.push(user_input[i])
-            elif judge_symbol_priority(user_input[i]) == 4:
-                while operator_stack._top >= 0 and judge_symbol_priority(operator_stack.peek()) != 1:
-                    v2 = number_stack.pop()
-                    v1 = number_stack.pop()
-                    sum_val = math(v1, v2, operator_stack.pop())
-                    number_stack.push(sum_val)
-                operator_stack.pop()
-    while len(operator_stack) > 0:
-        v2 = number_stack.pop()
-        v1 = number_stack.pop()
-        sum_val = math(v1, v2, operator_stack.pop())
-        number_stack.push(sum_val)
-    print("The result is: ", number_stack.peek())
+    user_input = input("Enter an expression: ")
+    print(Calculator.evaluate_str(user_input))
 
 
 if __name__ == "__main__":
     main()
-
