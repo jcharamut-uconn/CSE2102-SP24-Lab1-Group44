@@ -22,9 +22,6 @@ class Stack:
         return f"<Stack [{s}]>"
 
 class Expression(ABC):
-    def __init__(self):
-        pass
-
     @abstractmethod
     def evaluate(self):
         pass
@@ -54,6 +51,8 @@ class BinaryOperator(Expression):
             return self.lhs.evaluate() * self.rhs.evaluate()
         elif self.op == "/":
             return self.lhs.evaluate() / self.rhs.evaluate()
+        else:
+            raise ValueError("Invalid operator: " + self.op)
 
     def __repr__(self):
         return f"<BinaryOperator {self.lhs} {self.op} {self.rhs}>"
@@ -66,6 +65,8 @@ class UnaryOperator(Expression):
     def evaluate(self):
         if self.op == "-":
             return -self.rhs.evaluate()
+        else:
+            raise ValueError("Invalid operator: " + self.op)
 
     def __repr__(self):
         return f"<UnaryOperator {self.op} {self.rhs}>"
