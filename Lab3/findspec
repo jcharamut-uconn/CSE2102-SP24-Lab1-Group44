@@ -1,0 +1,36 @@
+
+# Test Specification for find command
+
+Parameters:
+   Pattern size:
+       empty.                           [property Empty]
+       single character.                [property NonEmpty]
+       many character.                  [property NonEmpty]
+       longer than any line in file.    [error]
+   Quoting:
+       pattern is quoted.               [property Quoted] 
+       pattern is not quoted.           [if NonEmpty]
+       pattern is improperly quoted.    [error]
+   Embeddedblanks:
+       no embedded blank.               [if NonEmpty]
+       one embedded blank.              [if NonEmpty && Quoted]
+       several embedded blanks.         [if NonEmpty && Quoted]
+   Embeddedquotes:
+       no embedded quotes.              [if NonEmpty] 
+       one embedded quote.              [if NonEmpty]
+       several embedded quotes.         [if NonEmpty] [single]
+   Filename:
+       good file name.
+       no file with this name.          [error]
+       omitted.                         [error]
+
+Environments:
+   Number of occurrences ofpatterninfile:
+       none.                            [if NonEmpty] [single]
+       exactly one.                     [if NonEmpty] [property Match]
+       more than one.                   [if NonEmpty] [property Match]
+   Pattern occurrencesontargetline:
+       # assumes line contains the pattern
+       one.                             [if Match]
+       more than one.                   [if Match] [single]
+
