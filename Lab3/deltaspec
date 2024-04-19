@@ -1,0 +1,59 @@
+# Test specificaion for https://www.delta.com/flightsearch/book-a-flight
+
+Parameters:
+    Departure Airport:
+        invalid airport.                        [error]
+        BDL.
+        PVD.
+
+    Arrival Airport:
+        invalid airport.                        [error]
+        ATL.
+        EWR.
+        MSP.
+
+    Departure date:
+        invalid date.                           [error]
+        today.
+        1 month in the future.
+        11 months in the future.
+
+    Return date:
+        invalid date.                           [error]
+        return date before departure date.      [error]
+        return date within this year.
+
+    Number of Passengers:
+        zero.                                   [error]
+        1-9.
+        >9.                                     [error]
+
+    Shop with Miles:
+        true.                                   [property ShopWithMiles]
+        false.
+
+    Refundable Fares:
+        true.                                   [if !ShopWithMiles]
+        false.
+
+    My dates are flexible:
+        true.                                   [property FlexibleDates]
+        false.
+
+    Include Nearby Airports:
+        true.                                   [if !FlexibleDates]
+        false.
+
+    Best Fares For:
+        Basic Economy.                          [single]
+        Main Cabin.                             [single]
+        Delta Comfort+.                         [single]
+        First Class.                            [single]
+        Delta Premium Select.                   [single]
+        Delta One.                              [single]
+
+    Meeting Code:
+        empty.
+        not empty.                              [if !ShopWithMiles]
+        longer than 5 characters.               [if !ShopWithMiles] [error]
+

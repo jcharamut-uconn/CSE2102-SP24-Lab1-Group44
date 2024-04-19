@@ -1,0 +1,14 @@
+Number of test frames generated: 284
+
+Questions:
+
+1. The meeting event code field is optional. How can you handle this field in TSL?
+    I can have choices for whether the meeting event code is empty or not empty.
+
+2. Notice that the some fields (e.g., “My dates are flexible” and “Include Nearby Airports”) are mutually exclusive. How can you use the [property] and [if] features of the TSL specification language to reflect this?
+    I have "My dates are flexible" define a property that "Include Nearby Airports" checks for
+    [property FlexibleDates] and [if !FlexibleDates]
+
+3. When the Shop with Miles is selected, how does the form change? How may you reflect this in the TSL?
+    When shop with miles is selected, the meeting code goes away and refundable fares is greyed out
+    For Shop With Miles I define a property and have the meeting code check [if !ShopWithMiles], and the same for refundable fares

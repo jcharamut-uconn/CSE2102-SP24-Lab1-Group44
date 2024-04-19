@@ -1,0 +1,3836 @@
+
+Test Case 1  		<error>
+   Departure Airport :  invalid airport
+
+
+Test Case 2  		<error>
+   Arrival Airport :  invalid airport
+
+
+Test Case 3  		<error>
+   Departure date :  invalid date
+
+
+Test Case 4  		<error>
+   Return date :  invalid date
+
+
+Test Case 5  		<error>
+   Return date :  return date before departure date
+
+
+Test Case 6  		<error>
+   Number of Passengers :  zero
+
+
+Test Case 7  		<error>
+   Number of Passengers :  >9
+
+
+Test Case 8  		<single>
+   Best Fares For :  Basic Economy
+
+
+Test Case 9  		<single>
+   Best Fares For :  Main Cabin
+
+
+Test Case 10 		<single>
+   Best Fares For :  Delta Comfort+
+
+
+Test Case 11 		<single>
+   Best Fares For :  First Class
+
+
+Test Case 12 		<single>
+   Best Fares For :  Delta Premium Select
+
+
+Test Case 13 		<single>
+   Best Fares For :  Delta One
+
+
+Test Case 14 		<error>  (follows [if])
+   Meeting Code :  longer than 5 characters
+
+
+Test Case 15 		(Key = 2.2.2.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 16 		(Key = 2.2.2.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 17 		(Key = 2.2.2.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 18 		(Key = 2.2.2.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 19 		(Key = 2.2.2.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 20 		(Key = 2.2.2.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 21 		(Key = 2.2.2.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 22 		(Key = 2.2.2.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 23 		(Key = 2.2.2.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 24 		(Key = 2.2.2.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 25 		(Key = 2.2.2.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 26 		(Key = 2.2.2.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 27 		(Key = 2.2.2.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 28 		(Key = 2.2.2.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 29 		(Key = 2.2.2.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 30 		(Key = 2.2.3.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 31 		(Key = 2.2.3.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 32 		(Key = 2.2.3.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 33 		(Key = 2.2.3.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 34 		(Key = 2.2.3.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 35 		(Key = 2.2.3.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 36 		(Key = 2.2.3.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 37 		(Key = 2.2.3.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 38 		(Key = 2.2.3.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 39 		(Key = 2.2.3.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 40 		(Key = 2.2.3.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 41 		(Key = 2.2.3.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 42 		(Key = 2.2.3.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 43 		(Key = 2.2.3.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 44 		(Key = 2.2.3.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 45 		(Key = 2.2.4.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 46 		(Key = 2.2.4.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 47 		(Key = 2.2.4.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 48 		(Key = 2.2.4.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 49 		(Key = 2.2.4.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 50 		(Key = 2.2.4.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 51 		(Key = 2.2.4.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 52 		(Key = 2.2.4.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 53 		(Key = 2.2.4.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 54 		(Key = 2.2.4.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 55 		(Key = 2.2.4.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 56 		(Key = 2.2.4.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 57 		(Key = 2.2.4.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 58 		(Key = 2.2.4.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 59 		(Key = 2.2.4.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 60 		(Key = 2.3.2.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 61 		(Key = 2.3.2.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 62 		(Key = 2.3.2.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 63 		(Key = 2.3.2.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 64 		(Key = 2.3.2.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 65 		(Key = 2.3.2.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 66 		(Key = 2.3.2.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 67 		(Key = 2.3.2.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 68 		(Key = 2.3.2.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 69 		(Key = 2.3.2.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 70 		(Key = 2.3.2.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 71 		(Key = 2.3.2.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 72 		(Key = 2.3.2.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 73 		(Key = 2.3.2.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 74 		(Key = 2.3.2.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 75 		(Key = 2.3.3.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 76 		(Key = 2.3.3.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 77 		(Key = 2.3.3.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 78 		(Key = 2.3.3.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 79 		(Key = 2.3.3.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 80 		(Key = 2.3.3.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 81 		(Key = 2.3.3.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 82 		(Key = 2.3.3.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 83 		(Key = 2.3.3.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 84 		(Key = 2.3.3.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 85 		(Key = 2.3.3.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 86 		(Key = 2.3.3.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 87 		(Key = 2.3.3.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 88 		(Key = 2.3.3.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 89 		(Key = 2.3.3.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 90 		(Key = 2.3.4.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 91 		(Key = 2.3.4.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 92 		(Key = 2.3.4.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 93 		(Key = 2.3.4.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 94 		(Key = 2.3.4.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 95 		(Key = 2.3.4.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 96 		(Key = 2.3.4.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 97 		(Key = 2.3.4.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 98 		(Key = 2.3.4.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 99 		(Key = 2.3.4.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 100		(Key = 2.3.4.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 101		(Key = 2.3.4.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 102		(Key = 2.3.4.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 103		(Key = 2.3.4.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 104		(Key = 2.3.4.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 105		(Key = 2.4.2.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 106		(Key = 2.4.2.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 107		(Key = 2.4.2.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 108		(Key = 2.4.2.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 109		(Key = 2.4.2.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 110		(Key = 2.4.2.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 111		(Key = 2.4.2.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 112		(Key = 2.4.2.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 113		(Key = 2.4.2.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 114		(Key = 2.4.2.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 115		(Key = 2.4.2.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 116		(Key = 2.4.2.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 117		(Key = 2.4.2.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 118		(Key = 2.4.2.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 119		(Key = 2.4.2.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 120		(Key = 2.4.3.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 121		(Key = 2.4.3.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 122		(Key = 2.4.3.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 123		(Key = 2.4.3.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 124		(Key = 2.4.3.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 125		(Key = 2.4.3.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 126		(Key = 2.4.3.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 127		(Key = 2.4.3.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 128		(Key = 2.4.3.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 129		(Key = 2.4.3.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 130		(Key = 2.4.3.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 131		(Key = 2.4.3.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 132		(Key = 2.4.3.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 133		(Key = 2.4.3.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 134		(Key = 2.4.3.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 135		(Key = 2.4.4.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 136		(Key = 2.4.4.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 137		(Key = 2.4.4.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 138		(Key = 2.4.4.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 139		(Key = 2.4.4.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 140		(Key = 2.4.4.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 141		(Key = 2.4.4.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 142		(Key = 2.4.4.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 143		(Key = 2.4.4.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 144		(Key = 2.4.4.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 145		(Key = 2.4.4.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 146		(Key = 2.4.4.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 147		(Key = 2.4.4.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 148		(Key = 2.4.4.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 149		(Key = 2.4.4.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  BDL
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 150		(Key = 3.2.2.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 151		(Key = 3.2.2.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 152		(Key = 3.2.2.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 153		(Key = 3.2.2.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 154		(Key = 3.2.2.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 155		(Key = 3.2.2.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 156		(Key = 3.2.2.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 157		(Key = 3.2.2.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 158		(Key = 3.2.2.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 159		(Key = 3.2.2.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 160		(Key = 3.2.2.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 161		(Key = 3.2.2.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 162		(Key = 3.2.2.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 163		(Key = 3.2.2.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 164		(Key = 3.2.2.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 165		(Key = 3.2.3.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 166		(Key = 3.2.3.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 167		(Key = 3.2.3.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 168		(Key = 3.2.3.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 169		(Key = 3.2.3.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 170		(Key = 3.2.3.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 171		(Key = 3.2.3.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 172		(Key = 3.2.3.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 173		(Key = 3.2.3.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 174		(Key = 3.2.3.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 175		(Key = 3.2.3.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 176		(Key = 3.2.3.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 177		(Key = 3.2.3.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 178		(Key = 3.2.3.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 179		(Key = 3.2.3.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 180		(Key = 3.2.4.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 181		(Key = 3.2.4.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 182		(Key = 3.2.4.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 183		(Key = 3.2.4.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 184		(Key = 3.2.4.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 185		(Key = 3.2.4.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 186		(Key = 3.2.4.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 187		(Key = 3.2.4.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 188		(Key = 3.2.4.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 189		(Key = 3.2.4.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 190		(Key = 3.2.4.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 191		(Key = 3.2.4.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 192		(Key = 3.2.4.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 193		(Key = 3.2.4.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 194		(Key = 3.2.4.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  ATL
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 195		(Key = 3.3.2.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 196		(Key = 3.3.2.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 197		(Key = 3.3.2.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 198		(Key = 3.3.2.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 199		(Key = 3.3.2.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 200		(Key = 3.3.2.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 201		(Key = 3.3.2.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 202		(Key = 3.3.2.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 203		(Key = 3.3.2.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 204		(Key = 3.3.2.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 205		(Key = 3.3.2.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 206		(Key = 3.3.2.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 207		(Key = 3.3.2.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 208		(Key = 3.3.2.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 209		(Key = 3.3.2.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 210		(Key = 3.3.3.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 211		(Key = 3.3.3.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 212		(Key = 3.3.3.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 213		(Key = 3.3.3.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 214		(Key = 3.3.3.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 215		(Key = 3.3.3.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 216		(Key = 3.3.3.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 217		(Key = 3.3.3.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 218		(Key = 3.3.3.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 219		(Key = 3.3.3.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 220		(Key = 3.3.3.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 221		(Key = 3.3.3.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 222		(Key = 3.3.3.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 223		(Key = 3.3.3.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 224		(Key = 3.3.3.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 225		(Key = 3.3.4.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 226		(Key = 3.3.4.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 227		(Key = 3.3.4.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 228		(Key = 3.3.4.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 229		(Key = 3.3.4.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 230		(Key = 3.3.4.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 231		(Key = 3.3.4.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 232		(Key = 3.3.4.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 233		(Key = 3.3.4.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 234		(Key = 3.3.4.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 235		(Key = 3.3.4.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 236		(Key = 3.3.4.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 237		(Key = 3.3.4.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 238		(Key = 3.3.4.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 239		(Key = 3.3.4.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  EWR
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 240		(Key = 3.4.2.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 241		(Key = 3.4.2.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 242		(Key = 3.4.2.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 243		(Key = 3.4.2.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 244		(Key = 3.4.2.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 245		(Key = 3.4.2.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 246		(Key = 3.4.2.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 247		(Key = 3.4.2.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 248		(Key = 3.4.2.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 249		(Key = 3.4.2.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 250		(Key = 3.4.2.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 251		(Key = 3.4.2.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 252		(Key = 3.4.2.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 253		(Key = 3.4.2.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 254		(Key = 3.4.2.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  today
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 255		(Key = 3.4.3.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 256		(Key = 3.4.3.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 257		(Key = 3.4.3.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 258		(Key = 3.4.3.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 259		(Key = 3.4.3.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 260		(Key = 3.4.3.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 261		(Key = 3.4.3.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 262		(Key = 3.4.3.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 263		(Key = 3.4.3.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 264		(Key = 3.4.3.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 265		(Key = 3.4.3.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 266		(Key = 3.4.3.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 267		(Key = 3.4.3.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 268		(Key = 3.4.3.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 269		(Key = 3.4.3.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  1 month in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 270		(Key = 3.4.4.3.2.1.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 271		(Key = 3.4.4.3.2.1.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 272		(Key = 3.4.4.3.2.1.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  true
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 273		(Key = 3.4.4.3.2.2.1.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 274		(Key = 3.4.4.3.2.2.1.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 275		(Key = 3.4.4.3.2.2.1.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 276		(Key = 3.4.4.3.2.2.1.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 277		(Key = 3.4.4.3.2.2.1.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 278		(Key = 3.4.4.3.2.2.1.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  true
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 279		(Key = 3.4.4.3.2.2.2.1.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 280		(Key = 3.4.4.3.2.2.2.1.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  true
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 281		(Key = 3.4.4.3.2.2.2.2.1.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 282		(Key = 3.4.4.3.2.2.2.2.1.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  true
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
+
+Test Case 283		(Key = 3.4.4.3.2.2.2.2.2.0.1.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  empty
+
+
+Test Case 284		(Key = 3.4.4.3.2.2.2.2.2.0.2.)
+   Departure Airport       :  PVD
+   Arrival Airport         :  MSP
+   Departure date          :  11 months in the future
+   Return date             :  return date within this year
+   Number of Passengers    :  1-9
+   Shop with Miles         :  false
+   Refundable Fares        :  false
+   My dates are flexible   :  false
+   Include Nearby Airports :  false
+   Best Fares For          :  <n/a>
+   Meeting Code            :  not empty
+
